@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css : flex จัด layout */
+        /* จัดเป็น แนวนอน กับตั้ง */
+        #container ul{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+        }
+        #container{
+            background-color: aqua;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        li{
+            list-style: none;
+        }
+        #home:hover{
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <ul>
+            <li id="home">home</li>
+            <li>about</li>
+            <li>contract</li>
+            <li>register</li>
+            <li>login</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
