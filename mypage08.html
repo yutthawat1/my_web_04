@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*break point*/
+        /*smart phone*/
+        @media screen and (max-width: 768px){
+            h1{
+                background-color: red;
+            }
+            span{
+                font-size: 10rem;
+            }
+        }
+        /*tablets*/
+        @media screen and (min-width: 769px) and (max-width: 1279px){
+            h1{
+                background-color: blue;
+            }
+            span{
+                font-size: 5rem;
+                color: cornsilk;
+                background-color: red;
+            }
+        }
+        /*pc*/
+        @media screen and (min-width: 1280px){
+            h1{
+                background-color: green;
+            }
+            span{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>hello</h1>
+    <p>hi</p>
+    <span>sssssss</span>
+</body>
+</html>
