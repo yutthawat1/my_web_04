@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            display: grid;
+            gap: 10px;
+        }
+        .item{
+                text-align: center;
+                padding: 10px;
+            }
+        /*s*/
+        @media screen and (max-width: 768px){
+            .con{
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto 500px auto;
+                grid-template-areas: 
+                "item1"
+                "item2"
+                "item3"
+                "item4"
+                "item5";
+            }
+            
+        }
+        /*m*/
+        @media screen and (min-width: 769px) and (max-width: 1279px){
+            .con{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto auto 500px auto;
+                grid-template-areas: 
+                "item1 item1"
+                "item2 item3"
+                "item4 item4"
+                "item5 item5";
+            }
+        }
+        /*L*/
+        @media screen and (min-width: 1280px){
+            .con{
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-template-rows: auto 500px auto;
+                grid-template-areas: 
+                "item1 item1 item1"
+                "item2 item4 item3"
+                "item5 item5 item5"
+                ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="item item1" style="background-color: red; grid-area:item1;">item1</div>
+        <div class="item item2" style="background-color: green; grid-area:item2;">item2</div>
+        <div class="item item3" style="background-color: blue; grid-area:item3;">item3</div>
+        <div class="item item4" style="background-color: yellow; grid-area:item4;">item4</div>
+        <div class="item item5" style="background-color: pink; grid-area:item5;">item5</div>
+    </div>
+    
+</body>
+</html>
